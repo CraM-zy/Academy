@@ -1,22 +1,28 @@
-package by.academy.classwork.lesson1;
+package by.academy.homework.lesson1;
 
-public class Application 
-{
-	public static void main(String... args) 
-	{
-		Cat first = new Cat();
-		first.nickname="Barsik";
-		System.out.print("The name of the first cat: ");
-		System.out.println(first.nickname);
-		Cat second = new Cat();
-		first.eat();
-		first.sleep();
-		first.walk();
-		for(int i=0; i<3; i++)
+public class Application {
+	public static void main(String...args) {
+		Cat cat1= new Cat();
+		cat1.nickname = "Мarsik";
+		System.out.println("Имя первого кота:" + cat1.nickname);
+		cat1.eat();
+		cat1.sleep();
+		cat1.walk();
+		
+		Cat cat2 = new Cat();
+		cat2.age = 10;
+		for (int i = 0; i < 3; i++)
 		{
-			second.grow(1);
+			cat2.grow();
+			System.out.println("The age of seond cat:" + cat2.getAge());
 		}
-		Cat cat3 = new Cat("Cool", 4);
-		System.out.print(cat3.nickname + " is " + cat3.age + " years old ");
-	}
+		
+		cat1.setMoney(50);
+		cat2.setMoney(30);
+		System.out.println(cat1.getMoney()+cat2.getMoney());
+		
+		cat1.getInitials();
+		
+		cat1.IsHomeAnimal(cat1.setIsHomeAnimal());
+		}	
 }
