@@ -1,30 +1,77 @@
-package by.academy.classwork.lesson1;
+package by.academy.homework.lesson1;
 
-public class Cat {
+import java.util.Scanner;
+
+public class Cat 
+{
+	double money;
 	int age;
 	String nickname;
-
-	public void grow(int addage) {
-		age = age + addage;
-		System.out.println("Now the age of second cat is:" + age);
+	char initials;
+	boolean isHomeAnimal;
+	
+	public Cat() { 
 	}
-
-	public void sleep() {
+	public Cat(String nickname) 
+	{
+		this.nickname=nickname;
+	}
+	
+	public void grow() 
+	{
+		age=age+1;
+	}
+	public void sleep() 
+	{
 		System.out.println("Кот спит");
 	}
-
-	public void eat() {
+	public void eat() 
+	{
 		System.out.println("Кот ест");
 	}
-
-	public void walk() {
+	public void walk() 
+	{
 		System.out.println("Кот гуляет");
 	}
+	public int getAge()
+	{
+		return age;
+	}
+	public void setMoney(double money)
+	{
+		this.money=money;
+	}
+	public double getMoney()
+	{
+		return money;
+	}
+	
+	public char setInitials() 
+	{
+		
+		this.initials = nickname.charAt(0);
+		return initials;
+	}
+	public void getInitials() 
+	{
+		System.out.println(setInitials());
+	}
 
-	public Cat() {
-	} // конструктор по умолчанию
-
-	public Cat(String nickname, int age) {
-		this.nickname = nickname;
+	public boolean setIsHomeAnimal() 
+	{
+		Scanner scan = new Scanner(System.in);
+        System.out.println("Это домашнее животное? 1-да, 0-нет ");
+        int num = scan.nextInt();
+		if(num==1)
+			isHomeAnimal=true;
+		return isHomeAnimal;
+	}
+	public void IsHomeAnimal(boolean IsHomeAnimal)
+	{
+		if(IsHomeAnimal==true)
+			System.out.print("Это домашнее животное!");
+		else
+			System.out.print("Это не домашнее животное!");
 	}
 }
+
