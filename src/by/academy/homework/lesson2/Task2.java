@@ -3,7 +3,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Task2 {
-    public static void main(String[]args) throws IOException {
+    public static void main(String[]args) throws IOException
+    {
         System.out.println("Введите тип данных");
         Scanner skan = new Scanner(System.in);
         String type = skan.nextLine();
