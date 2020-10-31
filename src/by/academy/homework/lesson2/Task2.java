@@ -13,21 +13,21 @@ public class Task2 {
                 System.out.println("Введите переменную");
                 Scanner skan1 = new Scanner(System.in);
                 int i = skan1.nextInt();
-                i=i%2;
+                i%=2;
                 System.out.println(i);
                 break;
             case "float":
                 System.out.println("Введите переменную");
                 Scanner skan2 = new Scanner(System.in);
                 float fl = skan2.nextFloat();
-                fl=fl*fl;
+                fl*=fl;
                 System.out.println(fl);
                 break;
             case "double":
                 System.out.println("Введите переменную");
                 Scanner skan3 = new Scanner(System.in);
                 double d = skan3.nextFloat();
-                d=d*0.3;
+                d*=0.3;
                 System.out.println(d);
                 break;
             case "char":
