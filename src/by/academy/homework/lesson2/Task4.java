@@ -5,12 +5,12 @@ public class Task4 {
     {
         int two=2;
         int i=1;
-        int result=0;
+        int result = 0;
         while(result <= 1000000)
         {
                 result = 2^i;
                 i++;
         }
-        System.out.println(result);
+        System.out.println( result );
     }
 }

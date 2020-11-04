@@ -43,6 +43,7 @@ public class Task2 {
                 String s = skan5.nextLine();
                 System.out.println("Hello" + s);
                 break;
+            default: System.out.println(type);
         }
     }
 }
